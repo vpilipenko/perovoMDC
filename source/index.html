@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Медицинский центр на Перовской улице</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<a class="logo"></a>
+				<button class="navbar-toggler" id="hamburger">
+					<div class="bar"></div>
+				</button>
+				<div class="navbar-collapse">
+					<a href="callto: +74994444444" class="phone">+7 (495) 543-24-74</a>
+					<ul class="navbar-nav">
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Анализы</a></li>
+						<li><a href="#">О центре</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#hamburger').click(function() {
+			$('.bar').toggleClass('animate');
+		});
+	});
+	</script>
+</body>
+
+</html>

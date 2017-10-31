@@ -1,0 +1,60 @@
+@import "colors.scss";
+@import "mixins.scss";
+
+@import "variables.scss";
+@import "typography.scss";
+@import "grid/main.scss";
+@import "navbar.scss";
+@import "hamburger.scss";
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+	@include box-sizing(border-box);
+}
+
+body {
+	font-size: $font-size-base;
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	color: $base-font-color;
+	background-color: $base-bg-color;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.link {
+	display: inline;
+	color: $base-link-color;
+	text-decoration: none;
+	border-bottom: 1px solid rgba($base-link-color, .3);
+	@include transition(color .3s ease-in-out);
+	&:focus,
+	&:hover {
+		color: $active-link-color;
+		border-bottom: 1px solid rgba($active-link-color, .3);
+	}
+	&:visited {
+		color: $deep-purple-a700;
+		border-bottom: 0;
+		text-decoration: none;
+	}
+	&.link-unbordered {
+		border-bottom: 0;
+	}
+	&.link-dashed {
+		border-bottom-style: dashed;
+	}
+}

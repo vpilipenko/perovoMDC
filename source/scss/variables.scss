@@ -1,0 +1,34 @@
+$font-size-base: .875rem;
+$font-size-lg: 1.125rem;
+$font-size-sm: .75rem;
+
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+$brand-color: $green-a700;
+
+$base-font-size: $font-size-base;
+$base-font-family: 'Roboto', sans-serif;
+$base-font-weight: $regular;
+$base-font-color: $grey-900;
+$base-bg-color: $grey-50;
+
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+$headings-margin-bottom: .75rem;
+$headings-font-family: 'Roboto', sans-serif;
+$headings-font-weight: $bold;
+$headings-line-height: 1.1;
+$headings-color: $grey-900;
+
+$small-font-size: $font-size-sm;
+$text-muted: $grey-600;
+
+$base-link-color: $brand-color;
+$active-link-color: $red-a700;
